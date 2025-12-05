@@ -1,0 +1,3 @@
+{% macro render_component(name, props = {}) %}
+    <div data-react-component="{{ name }}" data-props="{{ props|json_encode|e('html_attr') }}"></div>
+{% endmacro %}
